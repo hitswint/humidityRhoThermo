@@ -35,9 +35,10 @@ Description
 \*---------------------------------------------------------------------------*/
 
 #include "fvCFD.H"
-#include "dynamicFvMesh.H"
+// #include "dynamicFvMesh.H"
 #include "humidityRhoThermo.H"
-#include "dynamicMomentumTransportModel.H"
+// #include "dynamicMomentumTransportModel.H"
+#include "compressibleMomentumTransportModels.H"
 #include "fluidThermophysicalTransportModel.H"
 #include "pimpleControl.H"
 #include "pressureReference.H"
@@ -56,7 +57,8 @@ int main(int argc, char *argv[])
 
     #include "setRootCaseLists.H"
     #include "createTime.H"
-    #include "createDynamicFvMesh.H"
+    // #include "createDynamicFvMesh.H"
+    #include "createMesh.H"
     #include "createDyMControls.H"
     #include "initContinuityErrs.H"
     #include "createFields.H"
