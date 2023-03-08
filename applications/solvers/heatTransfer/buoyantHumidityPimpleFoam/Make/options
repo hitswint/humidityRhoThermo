@@ -20,6 +20,7 @@ EXE_LIBS = \
     -lspecie \
     -lturbulenceModels \
     -lcompressibleTurbulenceModels \
+    -lthermoTools \
     -latmosphericModels \
     -L$(FOAM_USER_LIBBIN) \
     -lhumidityRhoThermo
